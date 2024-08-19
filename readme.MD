@@ -7,6 +7,10 @@
 - Estructura de datos como un registro de usuarios que será una lista UNICA (areglo de objetos(nombre y edad)) que será compartida en toda la aplicación.
 ### ¿Porque nos sirve?
 - Solo puede haber una lista de usuarios.
+### Diagrama
+<div align="center">
+  <img src="https://static.platzi.com/media/public/uploads/diagrama-patron-diseno-creacional-singleton_7c7d85ef-3833-4c3d-b1d3-c1aae1228355.png" alt="Diagrama Patrón Singleton" style="max-width: 80%; height: auto;">
+</div>
 ### Claves del como:
 ## FACTORY
 ### Descripcion
