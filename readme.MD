@@ -262,20 +262,40 @@ Vamos a hacer un sandwitch pero paso a paso y pos separado. Al final, se concate
 </div>
 
 ### Pasos para implementarlo:
-- STEP 1.	
+- STEP 1: Declarar una clase base o interfaz prototipo que contenga los métodos de clonación.
 ```javascript
+        class Car {
+            constructor({ 
+               model = '', 
+               .... } = {}) 
+            clone() {
+                throw new Error('Method not implemented!');
+            }
+        }
+```
+- STEP 2: Crea productos concretos que heredan o implementan de la interfaz creada en el STEP 1, con esto se asegura que tenga el método clone (Se prioriza la configuración)
+```javascript
+        class Deportivo extends Car {
+            constructor(carToClone) {
+                super({
+                    model: carToClone?.model,
+                    ...});
+            }
+            // Sobrescribe el método de clonación.
+            clone() {
+            return new Deportivo(this);
+            }
+        }
 
 ```
-- STEP 2.	
-
-```
-- STEP 3.	
+- STEP 3: Clonamos el producto
 ```javascript
-
-```
-- STEP 4.	
-```javascript
-
+        // Ejemplo de uso del patrón Prototype.
+        const originalDeportivo = new Deportivo({ model: 'Coupe', color: 'Red' });
+        const clonedDeportivo = originalDeportivo.clone();
+        
+        console.log('Original Deportivo:', originalDeportivo);
+        console.log('Cloned Deportivo:', clonedDeportivo);
 ```
 ### Claves del como:
 
