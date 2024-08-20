@@ -1,8 +1,19 @@
-# APUNTES PATRONES
-Voy a desarollar los apuntes de la clase, incluyendo el codigo de las implementaciones personales.
-el repositorio con todas las implementaciones completas de los patrones esta en el siguiente link:
+# IMPLEMENTACION PATRONES
+Implementaciones de Patrones de diseño creacionales. 
+Repositorio con las implementaciones completas de los patrones en el siguiente link:
 
 [Repositorio del proyecto](https://github.com/GemmaClaverodelMoral/practica-patrones-diseno)
+
+#### SINGLETON: 
+- Registro unico de usuarios
+#### FACTORY: 
+- Fabrica de tipos de notificaciones: Correo, SMS, wapp 
+#### ABSTRACT FACTORY: 
+- 2 estilos de renderizado: Neomorfismo y Minimalismo para sets de: botones, menus, cards.
+#### BUILDER: 
+- Sandwitch con todos sus pasos, que son diferentes para Veggie Style y Meat Style
+#### PROTOTYPE: 
+- Clone de un carro typo Deportivo. 
 
 ## SINLGETON
 
